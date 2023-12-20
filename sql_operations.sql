@@ -14,3 +14,9 @@ select  date_format(date_sub(start_time, INTERVAL 1 DAY), '%d-%m-%Y') as int_tim
 where 1=1
 and column in ('data1','data2')
 order by int_time desc
+
+
+
+SELECT *
+FROM your_table
+WHERE DATE_FORMAT(time_new, '%d-%m-%Y') = DATE_FORMAT(NOW(), '%d-%m-%Y');
